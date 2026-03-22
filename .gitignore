@@ -1,0 +1,65 @@
+# =================================================================
+# SERVICORE - MASTER GITIGNORE (Root)
+# =================================================================
+
+# --- IDEs & Editors ---
+.vscode/
+.idea/
+*.iws
+*.iml
+*.ipr
+.project
+.classpath
+.settings/
+.factorypath
+bin/
+
+# --- System Metadata (CachyOS/Linux/Win) ---
+.DS_Store
+Thumbs.db
+.directory
+*.swp
+*.swo
+*~
+
+# --- Backend (Spring Boot / Java) ---
+**/target/
+**/build/
+**/*.class
+**/.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# --- Frontend (Next.js / Node) ---
+**/node_modules/
+**/.next/
+**/out/
+**/dist/
+**/pnpm-debug.log*
+**/npm-debug.log*
+
+# --- SEGURIDAD Y PRIVACIDAD (CRÍTICO) ---
+# Ignora TODOS los archivos de entorno reales
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+**/.env*
+**/*.env
+
+# EXCEPCIÓN: Permitir archivos de ejemplo (sin datos reales)
+!.env.example
+!.env.sample
+
+# --- Base de Datos & Logs ---
+*.sql
+*.dump
+*.backup
+**/pgdata/
+**/postgres-data/
+*.log
+logs/
+
+# --- Railway ---
+.railway/
