@@ -39,7 +39,6 @@ Thumbs.db
 **/npm-debug.log*
 
 # --- SEGURIDAD Y PRIVACIDAD (CRÍTICO) ---
-# Ignora TODOS los archivos de entorno reales
 .env
 .env.local
 .env.development.local
@@ -48,7 +47,7 @@ Thumbs.db
 **/.env*
 **/*.env
 
-# EXCEPCIÓN: Permitir archivos de ejemplo (sin datos reales)
+# EXCEPCIÓN:
 !.env.example
 !.env.sample
 
